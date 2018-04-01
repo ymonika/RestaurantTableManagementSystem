@@ -5,3 +5,4 @@ classes/
 libs/
 tmp/
 out/
+/.nb-gradle/
