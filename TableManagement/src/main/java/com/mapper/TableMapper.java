@@ -7,9 +7,9 @@ public class TableMapper {
 
     public static Table map(TableDto tableDto, Table table) {
         table.setCapacity(tableDto.getCapacity());
-        table.setCornerTable(tableDto.getIsCornerTable());
+        table.setCornerTable(tableDto.isCornerTable());
         table.setTableId(tableDto.getTableId());
-        table.setEmpty(tableDto.getIsEmpty());
+        table.setEmpty(tableDto.isEmpty());
         return table;
     }
 }

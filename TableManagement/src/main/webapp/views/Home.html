@@ -1,1 +1,34 @@
-<h2>Home Page</h2>
+<form class="" action="index.html" method="post">
+  <input type="text" ng-model="table.tableId" placeholder="TableID">
+  <input type="text" ng-model="table.capacity" placeholder="Capacity">
+  <select ng-model="table.isCornerTable">
+    <option value="" selected>IsCornerTable</option>
+    <option value="true">TRUE</option>
+    <option value="false" selected>FALSE</option>
+  </select>
+  <select ng-model="table.isEmpty">
+    <option value="" selected>Is Empty</option>
+    <option value="true">TRUE</option>
+    <option value="false">FALSE</option>
+  </select>
+  <button type="button" ng-click="save()">SAVE</button>
+</form>
+<br/>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Capacity</th>
+      <th>CornerTable</th>
+      <th>Empty</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="table in existingTables">
+      <td>{{table.tableId}}</td>
+      <td>{{table.capacity}}</td>
+      <td>{{table.cornerTable}}</td>
+      <td>{{table.empty}}</td>
+    </tr>
+  </tbody>
+</table>
