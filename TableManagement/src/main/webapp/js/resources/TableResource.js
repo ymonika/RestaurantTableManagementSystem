@@ -1,5 +1,5 @@
 app.factory('Table',['$resource',function($resource) {
-  return $resource("table/",{},{
+  return $resource("tables",{},{
     query: {method:'GET',params:{},isArray:true}
   });
 }]);

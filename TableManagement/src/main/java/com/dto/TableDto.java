@@ -5,47 +5,43 @@ public class TableDto {
 
     private String tableId;
     private int capacity;
-    private boolean isCornerTable;
-    private boolean isEmpty;
+    private boolean cornerTable;
+    private boolean empty;
 
     public TableDto() {
-        this.isEmpty = true;
+        this.empty = true;
     }
 
     public String getTableId() {
         return tableId;
     }
 
-    public TableDto withTableId(String tableId) {
+    public void setTableId(String tableId) {
         this.tableId = tableId;
-        return this;
     }
 
     public int getCapacity() {
         return capacity;
     }
 
-    public TableDto withCapacity(int capacity) {
+    public void setCapacity(int capacity) {
         this.capacity = capacity;
-        return this;
     }
 
     public boolean isCornerTable() {
-        return isCornerTable;
+        return cornerTable;
     }
 
-    public TableDto withCornerTable(boolean cornerTable) {
-        isCornerTable = cornerTable;
-        return this;
+    public void setCornerTable(boolean cornerTable) {
+        this.cornerTable = cornerTable;
     }
 
     public boolean isEmpty() {
-        return isEmpty;
+        return empty;
     }
 
-    public TableDto withEmpty(boolean empty) {
-        isEmpty = empty;
-        return this;
+    public void setEmpty(boolean empty) {
+        this.empty = empty;
     }
 
     @Override
@@ -53,8 +49,8 @@ public class TableDto {
         return "TableDto{" +
                 " tableId='" + tableId + '\'' +
                 ", capacity=" + capacity +
-                ", isCornerTable=" + isCornerTable +
-                ", isEmpty=" + isEmpty +
+                ", isCornerTable=" + cornerTable +
+                ", isEmpty=" + empty +
                 '}';
     }
 }
