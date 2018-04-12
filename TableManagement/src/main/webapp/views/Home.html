@@ -39,21 +39,4 @@
   </fieldset>
 </form>
 <br/>
-<table border="1">
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Capacity</th>
-      <th>CornerTable</th>
-      <th>Empty</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr ng-repeat="table in existingTables">
-      <td>{{table.tableId}}</td>
-      <td>{{table.capacity}}</td>
-      <td>{{table.cornerTable}}</td>
-      <td>{{table.empty}}</td>
-    </tr>
-  </tbody>
-</table>
+<grid data="existingTables"></grid>

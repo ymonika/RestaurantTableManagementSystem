@@ -8,6 +8,9 @@ app.config(['$routeProvider','$resourceProvider',
   $routeProvider.when('/',{
     templateUrl : 'views/Home.html',
     controller : 'HomeController'
+  }).when('/available',{
+    templateUrl : 'views/Available.html',
+    controller : 'AvailableController'
   });
 
 }]);
