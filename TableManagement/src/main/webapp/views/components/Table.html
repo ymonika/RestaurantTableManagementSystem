@@ -1,0 +1,6 @@
+<div class="table" ng-repeat="table in $ctrl.data" ng-class="{'available':table.empty,'not-available':!table.empty}">
+  <div class="id">{{table.tableId}}</div>
+  <div class="capacity">{{table.capacity}}</div>
+  <div class="corner" ng-if="table.cornerTable">C</div>
+  <div class="corner" ng-if="!table.cornerTable">N</div>
+</div>

@@ -12,6 +12,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <title>Index Page</title>
+    <link rel="stylesheet" href="css/table-management.css">
+
     <script type="text/javascript" src="node_modules/angular/angular.js"></script>
     <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="node_modules/angular-resource/angular-resource.js"></script>
@@ -19,6 +21,7 @@
     <script type="text/javascript" src="js/App.js"></script>
     <!-- Components -->
     <script type="text/javascript" src="js/components/GridComponent.js"></script>
+    <script type="text/javascript" src="js/components/TableComponent.js"></script>
     <!-- Controllers -->
     <script type="text/javascript" src="js/controllers/HomeController.js"></script>
     <script type="text/javascript" src="js/controllers/AvailableController.js"></script>
@@ -27,10 +30,10 @@
 </head>
 <body>
     <h2>Table Management</h2>
-    <nav>
+    <!-- <nav>
         <a href="#!/">Home</a>|
         <a href="#!/available">Available</a>
-    </nav>
+    </nav> -->
     <ng-view></ng-view>
 </body>
 </html>
