@@ -6,7 +6,7 @@ app.controller('HomeController',['$scope','TableResource',function($scope,Table)
     $scope.existingTables = Table.query();
   }
 
-  loadTables()
+  loadTables();
 
   $scope.save = function(){
     $scope.table.$save(function(){

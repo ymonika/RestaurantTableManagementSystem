@@ -6,6 +6,8 @@
   height: 120px;
   float: left;
   margin: 10px;
+  display:flex;
+  flex-direction:column;
 }
 
 .id{
@@ -29,4 +31,21 @@
 
 .not-available{
   background-color: red;
+}
+
+.home-layout{
+  display: flex;
+  flex-direction: row;
+}
+
+thead th{
+  padding: 10px;
+}
+
+td:last-child,tfoot th:last-child {
+  text-align: right;
+}
+
+td:last-child::before,tfoot th:last-child::before {
+  content:'$';
 }

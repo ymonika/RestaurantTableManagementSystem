@@ -1,42 +1,4 @@
-<!-- <form class="" action="index.html" method="post">
-  <fieldset style="width:10%">
-    <legend>Add Table</legend>
-    <table>
-      <tr>
-        <td>
-            <input type="text" ng-model="table.tableId" placeholder="TableID">
-        </td>
-      </tr>
-      <tr>
-        <td>
-            <input type="text" ng-model="table.capacity" placeholder="Capacity">
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <select ng-model="table.cornerTable">
-            <option value="" selected>IsCornerTable</option>
-            <option value="true">TRUE</option>
-            <option value="false" selected>FALSE</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <select ng-model="table.empty">
-            <option value="" selected>Is Empty</option>
-            <option value="true">TRUE</option>
-            <option value="false">FALSE</option>
-          </select>
-        </td>
-      </tr>
-      <tfoot>
-        <td>
-          <button type="button" ng-click="save()">SAVE</button>
-        </td>
-      </tfoot>
-    </table>
-  </fieldset>
-</form> -->
-<br/>
-<restro-table-list items="existingTables"></restro-table-list>
+<div class="home-layout">
+    <restro-table-list items="existingTables"></restro-table-list>
+    <order></order>
+</div>
