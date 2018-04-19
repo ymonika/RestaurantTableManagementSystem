@@ -1,4 +1,4 @@
-app.controller('HomeController',['$scope','Table',function($scope,Table) {
+app.controller('HomeController',['$scope','TableResource',function($scope,Table) {
 
   $scope.table = new Table();
 
