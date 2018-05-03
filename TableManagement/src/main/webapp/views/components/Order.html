@@ -8,13 +8,13 @@
     <tr class="order-item" ng-repeat="item in $ctrl.data">
       <td>{{item.id}}</td>
       <td>{{item.name}}</td>
-      <td>{{item.price}}</td>
+      <td class="price">{{item.price}}</td>
     </tr>
   </tbody>
   <tfoot>
     <tr class="total">
       <th colspan="2">Total Cost : </th>
-      <th>{{$ctrl.totalCost}}</th>
+      <th class="price">{{$ctrl.totalCost}}</th>
     </tr>
   </tfoot>
 </table>

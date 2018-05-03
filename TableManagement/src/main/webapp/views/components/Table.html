@@ -2,8 +2,20 @@
   <div class="card-header">{{$ctrl.table.tableId}}</div>
   <img class="card-img-top" src="images/Table.jpg" alt="Card image cap">
   <div class="card-body">
-    <p class="card-text">Capacity : {{$ctrl.table.capacity}} </p>
-    <p class="card-text">Is Corner : {{$ctrl.table.cornerTable}} </p>
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">Capacity</th>
+        <th scope="col">IsCorner</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>{{$ctrl.table.capacity}}</td>
+        <td>{{$ctrl.table.cornerTable}}</td>
+      </tr>
+      </tbody>
+    </table>
     <order></order>
     <div class="table-status" ng-class="{'available':$ctrl.table.empty,'not-available':!$ctrl.table.empty}">Available</div>
   </div>

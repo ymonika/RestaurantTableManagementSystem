@@ -25,10 +25,10 @@
   flex-direction: row;
 }
 
-td:last-child,tfoot th:last-child {
-  text-align: right;
+.price::before{
+ content:'$';
 }
 
-td:last-child::before,tfoot th:last-child::before {
-  content:'$';
+.price{
+    text-align:right;
 }
