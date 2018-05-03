@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- <link rel="stylesheet" type="text/css" href="css/justified-nav.css"> -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -12,6 +12,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <title>Index Page</title>
+    <!-- BOOTSTRAP SETUP -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/table-management.css">
 
     <script type="text/javascript" src="node_modules/angular/angular.js"></script>
@@ -24,6 +30,7 @@
     <script type="text/javascript" src="js/components/TableComponent.js"></script>
     <script type="text/javascript" src="js/components/TableListComponent.js"></script>
     <script type="text/javascript" src="js/components/OrderComponent.js"></script>
+    <script type="text/javascript" src="js/components/NavBarComponent.js"></script>
     <!-- Controllers -->
     <script type="text/javascript" src="js/controllers/HomeController.js"></script>
     <script type="text/javascript" src="js/controllers/AvailableController.js"></script>
@@ -31,11 +38,12 @@
     <script text="text/javascript" src="js/resources/TableResource.js"></script>
 </head>
 <body>
-    <h2>Table Management</h2>
+    <!--<h2>Table Management</h2>-->
     <!-- <nav>
         <a href="#!/">Home</a>|
         <a href="#!/available">Available</a>
     </nav> -->
+    <nav-bar></nav-bar>
     <ng-view></ng-view>
 </body>
 </html>

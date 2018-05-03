@@ -1,6 +1,10 @@
-<div class="table" ng-class="{'available':$ctrl.table.empty,'not-available':!$ctrl.table.empty}" ng-click="$ctrl.viewDetails()">
-  <div class="id">{{$ctrl.table.tableId}}</div>
-  <div class="capacity">{{$ctrl.table.capacity}}</div>
-  <div class="corner" ng-if="$ctrl.table.cornerTable">C</div>
-  <div class="corner" ng-if="!$ctrl.table.cornerTable">N</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-header">{{$ctrl.table.tableId}}</div>
+  <img class="card-img-top" src="images/Table.jpg" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Capacity : {{$ctrl.table.capacity}} </p>
+    <p class="card-text">Is Corner : {{$ctrl.table.cornerTable}} </p>
+    <order></order>
+    <div class="table-status" ng-class="{'available':$ctrl.table.empty,'not-available':!$ctrl.table.empty}">Available</div>
+  </div>
 </div>
