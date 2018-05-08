@@ -3,9 +3,11 @@ function TableController(OrderService){
   ctrl.order = undefined;
 
   ctrl.$onInit = function(){
-    OrderService.getOrderBy(ctrl.table.tableId,function(data){
-      ctrl.order = data;
-    });
+    if(ctrl.table.empty == false){
+      OrderService.getOrderBy(ctrl.table.tableId,function(data){
+        ctrl.order = data;
+      });
+    }
   }
 
   ctrl.viewDetails = function(){
