@@ -23,8 +23,8 @@ public class OrderResource {
             @ApiResponse(code = 200, message = "Order currently available on the given table", response = Order.class)})
     public Order getOrderBy(@PathParam("tableId") String tableId) {
         final Order order = new Order(UUID.randomUUID().toString());
-        order.getItems().add(new Item("Apple"));
-        order.getItems().add(new Item("Orange"));
+        order.getItems().add(new Item("100", "Apple", 54.25));
+        order.getItems().add(new Item("200", "Orange", 65.23));
         return order;
     }
 

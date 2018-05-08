@@ -30,6 +30,10 @@ public class Order {
         return items;
     }
 
+    public double getTotalCost() {
+        return items.stream().mapToDouble(item -> item.getPrice()).sum();
+    }
+
     @Override
     public String
     toString() {

@@ -1,8 +1,11 @@
 function TableController(OrderService){
   var ctrl = this;
+  ctrl.order = undefined;
 
   ctrl.$onInit = function(){
-    OrderService.getOrderBy(ctrl.table.tableId);
+    OrderService.getOrderBy(ctrl.table.tableId,function(data){
+      ctrl.order = data;
+    });
   }
 
   ctrl.viewDetails = function(){
