@@ -6,3 +6,5 @@ libs/
 tmp/
 out/
 /.nb-gradle/
+**/node_modules/*
+**/coverage/*
