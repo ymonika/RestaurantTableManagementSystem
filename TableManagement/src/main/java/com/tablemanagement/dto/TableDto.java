@@ -1,4 +1,4 @@
-package com.dto;
+package com.tablemanagement.dto;
 
 
 public class TableDto {

@@ -1,5 +1,5 @@
-<div class="card" style="width: 18rem;">
-  <div class="card-header">{{$ctrl.table.tableId}}</div>
+<div class="card" ng-class="{'bg-success':$ctrl.table.empty,'bg-danger':!$ctrl.table.empty}" style="width: 18rem;">
+  <div class="card-header">Table No: {{$ctrl.table.tableId}}</div>
   <img class="card-img-top" src="images/Table.jpg" alt="Card image cap">
   <div class="card-body">
     <table class="table">
@@ -17,6 +17,7 @@
       </tbody>
     </table>
     <order data="$ctrl.order"></order>
-    <div class="table-status" ng-class="{'available':$ctrl.table.empty,'not-available':!$ctrl.table.empty}">Available</div>
+    
+    <!-- <div class="table-status" ng-class="{'available':$ctrl.table.empty,'not-available':!$ctrl.table.empty}">Available</div> -->
   </div>
 </div>

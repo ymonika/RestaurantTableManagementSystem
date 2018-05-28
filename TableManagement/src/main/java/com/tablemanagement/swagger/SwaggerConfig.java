@@ -1,4 +1,4 @@
-package com.swagger;
+package com.tablemanagement.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

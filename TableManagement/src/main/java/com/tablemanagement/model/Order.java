@@ -1,4 +1,4 @@
-package com.model;
+package com.tablemanagement.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.annotations.ApiModel;

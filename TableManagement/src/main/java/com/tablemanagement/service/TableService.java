@@ -1,9 +1,9 @@
-package com.service;
+package com.tablemanagement.service;
 
-import com.dto.*;
-import com.mapper.TableMapper;
-import com.model.Table;
-import com.repository.TableRepository;
+import com.tablemanagement.dto.*;
+import com.tablemanagement.mapper.TableMapper;
+import com.tablemanagement.model.Table;
+import com.tablemanagement.repository.TableRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

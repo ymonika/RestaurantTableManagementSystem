@@ -1,4 +1,4 @@
-package com.model;
+package com.tablemanagement.model;
 
 public class Item {
     private final String id;

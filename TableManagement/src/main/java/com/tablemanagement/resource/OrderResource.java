@@ -1,20 +1,20 @@
-package com.resource;
+package com.tablemanagement.resource;
 
 
-import com.model.Item;
-import com.model.Order;
+import com.tablemanagement.model.Item;
+import com.tablemanagement.model.Order;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-import javax.websocket.server.PathParam;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import java.util.UUID;
 
-@RestController
-@RequestMapping(value = "{tableId}/orders")
+@Controller
+@Path(value = "{tableId}/orders")
 @Api(value = "orders", description = "A resource endpoint for managing the orders related to a table")
 public class OrderResource {
 

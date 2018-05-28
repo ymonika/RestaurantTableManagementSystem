@@ -1,6 +1,6 @@
-package com.repository;
+package com.tablemanagement.repository;
 
-import com.model.Table;
+import com.tablemanagement.model.Table;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

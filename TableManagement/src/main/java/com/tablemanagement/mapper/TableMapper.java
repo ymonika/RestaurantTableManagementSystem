@@ -1,7 +1,7 @@
-package com.mapper;
+package com.tablemanagement.mapper;
 
-import com.dto.TableDto;
-import com.model.Table;
+import com.tablemanagement.dto.TableDto;
+import com.tablemanagement.model.Table;
 
 public class TableMapper {
 
