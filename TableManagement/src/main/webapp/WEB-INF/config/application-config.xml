@@ -17,6 +17,6 @@
     <!-- Annotation Based Binding -->
     <mvc:annotation-driven/>
 
-    <bean id="rolesAllowedDynamicFeature" class="org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature"></bean>
+    <!--<bean id="rolesAllowedDynamicFeature" class="org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature"></bean>-->
 
 </beans>

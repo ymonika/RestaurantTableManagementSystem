@@ -5,8 +5,11 @@ apply plugin: 'java'
 apply plugin: 'war'
 apply plugin: 'idea'
 apply plugin: 'groovy'
+apply plugin: 'org.akhikhl.gretty'
+apply from: '../external-dependencies.gradle'
 
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 war{
     zip64 = true
@@ -15,6 +18,22 @@ war{
 jacoco {
     toolVersion = "0.7.6.201602180812"
     reportsDir = file("$buildDir/customJacocoReportDir")
+}
+
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url "https://jcenter.bintray.com"
+        }
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath 'com.bmuschko:gradle-cargo-plugin:2.2.3'
+        classpath "gradle.plugin.org.akhikhl.gretty:gretty:2.0.0"
+    }
 }
 
 jacocoTestReport {
@@ -41,12 +60,18 @@ jar {
     zip64 = true
 }
 
-repositories {
-    mavenCentral()
+gretty {
+    httpPort = 8091
+    scanInterval = 1
+//	host = '127.0.0.1'
+    servletContainer = 'jetty8'
+    managedClassReload = true
 }
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+repositories {
+    jcenter()
+    mavenCentral()
+}
 
 dependencies {
     compile json,jersey.jackson,swagger2

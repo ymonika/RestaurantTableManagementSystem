@@ -20,7 +20,7 @@
         <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
         <init-param>
             <param-name>jersey.config.server.provider.packages</param-name>
-            <param-value>com.tablemanagement.resource,com.tablemanagement.filters</param-value>
+            <param-value>com.tablemanagement.resource</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
@@ -28,12 +28,4 @@
         <servlet-name>table-management</servlet-name>
         <url-pattern>/rest/*</url-pattern>
     </servlet-mapping>
-    <!-- <filter>
-        <filter-name>CORS</filter-name>
-        <filter-class>com.thetransactioncompany.cors.CORSFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>CORS</filter-name>
-        <url-pattern>/rest/*</url-pattern>
-    </filter-mapping> -->
 </web-app>
